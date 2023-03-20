@@ -30,6 +30,7 @@ for (let i = 0; i < imageSrc.length; i++) {
         openModal();
         currentSlide(i + 1, "lightbox");
     });
+    img.alt = imageAlt[i];
     row.appendChild(img);
 }
 
@@ -43,6 +44,7 @@ for (let i = 0; i < imageSrc.length; i++) {
 
   const img = document.createElement("img");
   img.src = imageSrc[i];
+  img.alt = imageAlt[i];
   lightBoxSlide.appendChild(img);
 
   modalContent.appendChild(lightBoxSlide);
