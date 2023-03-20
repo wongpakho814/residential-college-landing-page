@@ -1,0 +1,73 @@
+/* 
+  --primary: #215170;
+  --dark-blue: #103953;
+  --blue: #406e8c;
+  --light-blue: #7098b2;
+  --secondary-bg: #dde9eb;
+  --primary-bg: #ffffff;
+  --alternative-bg: #e8e9e9;
+  --text: #303030;
+  --primary-transparent: rgba(33, 81, 112, 0.8);
+  --text-transparent: rgba(48, 48, 48, 0.8);
+*/
+
+.parallax1,
+.parallax2,
+.parallax3 {
+  /* Full height */
+  min-height: 100vh;
+  width: 100%;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  top: -17px;
+}
+
+.parallax1 {
+  /* The image used */
+  background-image: url("../images/parallax_img.jpg");
+}
+
+.parallax2 {
+  /* The image used */
+  background-image: url("../images/parallax_img2.jpg");
+}
+
+.parallax3 {
+  /* The image used */
+  background-image: url("../images/parallax_img3.jpg");
+  min-height: 0vh;
+}
+
+.blur {
+  backdrop-filter: blur(2px);
+  height: 100%;
+  width: 100%;
+}
+
+.parallax1 .blur {
+  padding: 50px;
+}
+
+/* Turn off parallax scrolling for phones */
+@media (max-width: 762px) {
+  .parallax1,
+  .parallax2,
+  .parallax3 {
+    background-image: none;
+  }
+
+  .parallax1 {
+    background-color: var(--alternative-bg);
+  }
+
+  .parallax2 {
+    background-color: var(--secondary-bg);
+  }
+
+  .parallax3 {
+    background-color: var(--alternative-bg);
+  }
+}

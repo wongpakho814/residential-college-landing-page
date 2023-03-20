@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: #215170;
+  --dark-blue: #103953;
+  --blue: #406e8c;
+  --light-blue: #7098b2;
+  --secondary-bg: #dde9eb;
+  --primary-bg: #ffffff;
+  --alternative-bg: #e8e9e9;
+  --text: #303030;
+  --primary-transparent: rgba(33, 81, 112, 0.8);
+  --text-transparent: rgba(48, 48, 48, 0.8);
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  line-height: 1;
+  font-family: sans-serif;
+}
+
+main {
+  overflow: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Caladea", serif;
+}
+
+h6,
+a:visited,
+a:hover {
+  font-family: "Arimo", sans-serif;
+}
+
+p,
+a,
+.huge-text,
+.big-text {
+  font-family: "Arimo", sans-serif;
+}
+
+h1 {
+  font-size: 48px;
+}
+
+h2 {
+  font-size: 36px;
+}
+
+h3,
+.huge-text {
+  font-size: 30px;
+}
+
+h4,
+.big-text {
+  font-size: 24px;
+}
+
+h5 {
+  font-size: 22px;
+}
+
+h6,
+p,
+a,
+a:visited,
+a:hover {
+  font-size: 20px;
+}
+
+h1,
+a:hover {
+  color: var(--primary-bg);
+}
+
+h2,
+h6,
+p,
+.huge-text,
+.big-text {
+  color: var(--text);
+}
+
+h3,
+h4,
+h5,
+a,
+a:visited {
+  color: var(--primary);
+}
+
+input,
+select,
+option,
+optgroup,
+textarea,
+button,
+pre,
+code {
+  font-size: 100%;
+  font-family: inherit;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+@media (max-width: 1140px) {
+  p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 762px) {
+  p {
+    font-size: 14px;
+  }
+}

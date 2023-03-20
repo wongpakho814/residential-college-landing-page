@@ -1,0 +1,126 @@
+/* 
+  --primary: #215170;
+  --dark-blue: #103953;
+  --blue: #406e8c;
+  --light-blue: #7098b2;
+  --secondary-bg: #dde9eb;
+  --primary-bg: #ffffff;
+  --alternative-bg: #e8e9e9;
+  --text: #303030;
+  --primary-transparent: rgba(33, 81, 112, 0.8);
+  --text-transparent: rgba(48, 48, 48, 0.8);
+*/
+
+#section4 .blur {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 10px;
+}
+
+.content-container {
+  width: 45%;
+  margin: 5px;
+}
+
+.collapsible {
+  background-color: var(--primary);
+  color: var(--primary-bg);
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: center;
+  outline: none;
+  font-size: 15px;
+}
+
+.collapsible p {
+  color: var(--primary-bg);
+}
+
+.collapsible:hover {
+  background-color: var(--dark-blue);
+}
+
+#section4 .content {
+  padding: 20px;
+  display: none;
+  overflow: hidden;
+  background-color: var(--secondary-bg);
+  border-radius: 0px 0px 10px 10px;
+}
+
+.content .slideshow-container {
+  margin-bottom: 10px;
+}
+
+.slideshow-container img {
+  width: 100%;
+}
+
+.room-prev,
+.room-next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: var(--primary-bg);
+  background-color: var(--text-transparent);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.room-next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.room-prev:hover,
+.room-next:hover {
+  background-color: var(--text);
+}
+
+.fadeIn {
+  animation: fadeIn 0.5s;
+}
+
+.fadeOut {
+  animation: fadeOut 0.5s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@media (max-width: 762px) {
+  .singleBed-prev,
+  .singleBed-next {
+    font-size: 12px;
+  }
+
+  .content-container {
+    width: 100%;
+  }
+}

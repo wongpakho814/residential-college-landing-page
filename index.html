@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Residential college landing page</title>
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;700&family=Caladea:wght@700&display=swap" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/slideIn.css" />
+    <link rel="stylesheet" href="./assets/css/parallax.css" />
+    <link rel="stylesheet" href="./assets/css/nav.css" />
+    <link rel="stylesheet" href="./assets/css/heroSlider.css" />
+    <link rel="stylesheet" href="./assets/css/section1-2.css" />
+    <link rel="stylesheet" href="./assets/css/section3.css" />
+    <link rel="stylesheet" href="./assets/css/section4.css" />
+    <link rel="stylesheet" href="./assets/css/footer.css" />
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="menu-icon">
+                <span class="fa fa-bars"></span>
+            </div>
+            <img class="logo" src="./assets/images/logo.png" alt="Logo for residential college" />
+            <div class="nav-items">
+                <li>
+                    <div class="dropdown">
+                        <a href="#" class="underline-animation">Home</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="dropdown">
+                        <a href="#" class="underline-animation">About</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="dropdown">
+                        <a href="#" class="underline-animation">Menu1</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="dropdown">
+                        <a href="#" class="dropbtn underline-animation">Menu2</a>
+                        <div class="dropdown-content">
+                            <a href="#">Link 1</a>
+                            <a href="#">Link 2</a>
+                            <a href="#">Link 3</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="dropdown">
+                        <a href="#" class="underline-animation">Menu3</a>
+                    </div>
+                </li>
+            </div>
+            <div class="search-icon">
+                <span class="fa fa-search"></span>
+            </div>
+            <div class="cancel-icon">
+                <span class="fa fa-times"></span>
+            </div>
+            <form action="#">
+                <input type="search" class="search-data" placeholder="Search" required />
+                <button type="submit" class="fa fa-search"></button>
+            </form>
+        </nav>
+    </header>
+
+    <main>
+        <section class="slideshow-container">
+            <div class="heroSlides fade">
+                <div class="form-container">
+                    <form id="contact-form" action="" method="post" onsubmit="return validateForm()">
+                        <label for="fname">First Name</label>
+                        <input type="text" id="fname" name="firstname" placeholder="Your name.." />
+                        <label for="lname">Last Name</label>
+                        <input type="text" id="lname" name="lastname" placeholder="Your last name.." />
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Your email.." />
+                        <label for="phone">Phone number</label>
+                        <input type="tel" id="phone" name="phone" placeholder="0123456789" pattern="[0-9]{10}" />
+                        <br />
+                        <div id="submit-div">
+                            <input id="contact-form-submit" type="submit" value="Submit" />
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="heroSlides fade">
+                <img class="gfg" src="./assets/images/hero_img2.jpg" />
+            </div>
+            <div class="heroSlides fade">
+                <img class="gfg" src="./assets/images/hero_img3.jpg" />
+            </div>
+            <a class="hero-prev" onclick="plusSlides(-1, 'hero')">❮</a>
+            <a class="hero-next" onclick="plusSlides(1, 'hero')">❯</a>
+        </section>
+        <section class="dots">
+            <span class="dot" onclick="currentSlide(1, 'hero')"></span>
+            <span class="dot" onclick="currentSlide(2, 'hero')"></span>
+            <span class="dot" onclick="currentSlide(3, 'hero')"></span>
+        </section>
+
+        <div class="parallax1">
+            <div class="blur">
+                <section id="section1">
+                    <section class="card reveal">
+                        <img src="./assets/images/card_img.jpg" alt="Chi (student)" />
+                        <div class="card-container">
+                            <h3>Chi (student)</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet. Aut necessitatibus dignissimos est
+                                minima enim eos ducimus provident hic nulla neque et repellat
+                                aspernatur.
+                            </p>
+                        </div>
+                    </section>
+                    <section class="card reveal">
+                        <img src="./assets/images/card_img2.jpg" alt="Hamish (tutor)" />
+                        <div class="card-container">
+                            <h3>Hamish (tutor)</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet. Aut necessitatibus dignissimos est
+                                minima enim eos ducimus provident hic nulla neque et repellat
+                                aspernatur.
+                            </p>
+                        </div>
+                    </section>
+                    <section class="card reveal">
+                        <img src="./assets/images/card_img3.jpg" alt="Sarah (student)" />
+                        <div class="card-container">
+                            <h3>Sarah (student)</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet. Aut necessitatibus dignissimos est
+                                minima enim eos ducimus provident hic nulla neque et repellat
+                                aspernatur.
+                            </p>
+                        </div>
+                    </section>
+                </section>
+
+                <section id="section2">
+                    <section class="content-box reveal">
+                        <img src="./assets/images/map.jpg" class="float-left" alt="Location" />
+                        <div>
+                            <h2>Location</h2>
+                            <p>
+                                Lorem ipsum dolor sit amet. Est nostrum exercitationem ex quia
+                                modi et suscipit dolores. Ea consectetur accusantium et omnis
+                                expedita qui asperiores excepturi hic neque quod. Quo quia ducimus
+                                eum cumque voluptas et iusto minima et Quis deserunt in nobis
+                                omnis vel obcaecati quam sit sapiente animi. <br /><br /><a href="#">Click here to learn
+                                    more</a>
+                            </p>
+                        </div>
+                    </section>
+                    <section class="content-box reveal">
+                        <img src="./assets/images/transportation.jpg" class="float-left" alt="Transportation" />
+                        <div>
+                            <h2>Transportation</h2>
+                            <p>
+                                Lorem ipsum dolor sit amet. Est nostrum exercitationem ex quia
+                                modi et suscipit dolores. Ea consectetur accusantium et omnis
+                                expedita qui asperiores excepturi hic neque quod. Quo quia ducimus
+                                eum cumque voluptas et iusto minima et Quis deserunt in nobis
+                                omnis vel obcaecati quam sit sapiente animi. <br /><br /><a href="#">Click here to learn
+                                    more</a>
+                            </p>
+                        </div>
+                    </section>
+                    <section class="content-box reveal">
+                        <img src="./assets/images/people.jpg" class="float-left" alt="Community and Facilities" />
+                        <div>
+                            <h2>Community and Facilities</h2>
+                            <p>
+                                Lorem ipsum dolor sit amet. Est nostrum exercitationem ex quia
+                                modi et suscipit dolores. Ea consectetur accusantium et omnis
+                                expedita qui asperiores excepturi hic neque quod. Quo quia ducimus
+                                eum cumque voluptas et iusto minima et Quis deserunt in nobis
+                                omnis vel obcaecati quam sit sapiente animi. <br /><br /><a href="#">Click here to learn
+                                    more</a>
+                            </p>
+                        </div>
+                    </section>
+                </section>
+            </div>
+        </div>
+
+        <section id="section3" class="parallax2">
+            <div class="blur">
+                <h2>Photo Gallery</h2>
+                <section class="row reveal"></section>
+                <div id="lightboxModal" class="modal">
+                    <span class="close cursor" onclick="closeModal()">&times;</span>
+                    <div class="modal-content"></div>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="section4" class="parallax3">
+            <div class="blur">
+                <div class="content-container">
+                    <button type="button" class="collapsible">
+                        <p>Single Bedroom</p>
+                    </button>
+                    <div class="content">
+                        <div class="slideshow-container">
+                            <div class="singleBedSlides fade">
+                                <img src="./assets/images/hero_img.jpg" />
+                            </div>
+
+                            <div class="singleBedSlides fade">
+                                <img src="./assets/images/floor_plan.jpg" />
+                            </div>
+
+                            <div class="singleBedSlides fade">
+                                <img src="./assets/images/hero_img3.jpg" />
+                            </div>
+                            <a class="room-prev" onclick="plusSlides(-1, 'singleBed')">❮</a>
+                            <a class="room-next" onclick="plusSlides(1, 'singleBed')">❯</a>
+                        </div>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                            enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                            nisi ut aliquip ex ea commodo consequat.
+                        </p>
+                    </div>
+                </div>
+                <div class="content-container">
+                    <button type="button" class="collapsible">
+                        <p>Double Bedroom</p>
+                    </button>
+                    <div class="content">
+                        <div class="slideshow-container">
+                            <div class="doubleBedSlides fade">
+                                <img src="./assets/images/hero_img.jpg" />
+                            </div>
+
+                            <div class="doubleBedSlides fade">
+                                <img src="./assets/images/floor_plan.jpg" />
+                            </div>
+
+                            <div class="doubleBedSlides fade">
+                                <img src="./assets/images/hero_img3.jpg" />
+                            </div>
+                            <a class="room-prev" onclick="plusSlides(-1, 'doubleBed')">❮</a>
+                            <a class="room-next" onclick="plusSlides(1, 'doubleBed')">❯</a>
+                        </div>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                            enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                            nisi ut aliquip ex ea commodo consequat.
+                        </p>
+                    </div>
+                </div>
+                <div class="content-container">
+                    <button type="button" class="collapsible">
+                        <p>4 Bedroom</p>
+                    </button>
+                    <div class="content">
+                        <div class="slideshow-container">
+                            <div class="fourBedSlides fade">
+                                <img src="./assets/images/hero_img.jpg" />
+                            </div>
+
+                            <div class="fourBedSlides fade">
+                                <img src="./assets/images/floor_plan.jpg" />
+                            </div>
+
+                            <div class="fourBedSlides fade">
+                                <img src="./assets/images/hero_img3.jpg" />
+                            </div>
+                            <a class="room-prev" onclick="plusSlides(-1, 'fourBed')">❮</a>
+                            <a class="room-next" onclick="plusSlides(1, 'fourBed')">❯</a>
+                        </div>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                            enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                            nisi ut aliquip ex ea commodo consequat.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="item">
+                <a href="#">
+                    <h4>Home</h4>
+                </a>
+            </div>
+            <div class="item">
+                <a href="#">
+                    <h4>About</h4>
+                </a>
+            </div>
+            <div class="item">
+                <a href="#">
+                    <h4>Menu1</h4>
+                </a>
+            </div>
+            <div class="item">
+                <a href="#">
+                    <h4>Menu2</h4>
+                </a>
+                <ul>
+                    <li><a href="#">Link1</a></li>
+                    <li><a href="#">Link2</a></li>
+                    <li><a href="#">Link3</a></li>
+                </ul>
+            </div>
+            <div class="item">
+                <a href="#">
+                    <h4>Menu3</h4>
+                </a>
+            </div>
+        </div>
+        <img class="logo" src="./assets/images/logo.png" alt="Logo for residential college" />
+        <p class="copyright">Built with Acora</p>
+    </footer>
+
+    <script src="./assets/js/slideIn.js"></script>
+    <script src="./assets/js/navbar.js"></script>
+    <script src="./assets/js/lightbox.js"></script>
+    <script src="./assets/js/slider.js"></script>
+    <script src="./assets/js/collapse.js"></script>
+</body>
+
+</html>
