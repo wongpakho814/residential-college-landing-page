@@ -66,8 +66,10 @@
   border-radius: 10px;
 }
 
-.content-box h2 {
+.content-box h1 {
   margin-bottom: 20px;
+  color: var(--text);
+  text-align: center;
 }
 
 .content-box a {
@@ -110,6 +112,12 @@
     text-align: center;
     width: auto;
     margin-left: 0px;
+  }
+}
+
+@media (max-width: 1140px) {
+  .content-box h1 {
+    font-size: 30px;
   }
 }
 

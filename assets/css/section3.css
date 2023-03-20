@@ -24,7 +24,7 @@
   background-color: transparent;
 }
 
-#section3 h2 {
+#section3 h1 {
   color: var(--primary-bg);
   background-color: var(--text);
   margin-top: auto;
@@ -207,10 +207,6 @@
 
 /* For mobile/tablet users */
 @media (max-width: 762px) {
-  #section3 h2 {
-    color: var(--text);
-  }
-
   .column {
     width: 33%;
   }
