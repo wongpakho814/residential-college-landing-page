@@ -27,6 +27,7 @@
 #section3 h1 {
   color: var(--primary-bg);
   background-color: var(--text);
+  text-align: center;
   margin-top: auto;
   margin-bottom: auto;
   padding: 10px;
@@ -211,12 +212,35 @@
     width: 33%;
   }
 
+  #lightboxModal {
+    width: 95%;
+  }
+
   .lightbox-prev,
   .lightbox-next {
     top: 25%;
     font-size: 12px !important;
     margin-left: -15px;
     margin-right: -15px;
+  }
+
+  #section3 h1 {
+    margin-bottom: 50px;
+  }
+
+  /* Disable hover animation for mobiles */
+  #section3 .default-img {
+    width: 45%;
+    animation: none;
+  }
+
+  #section3 .default-img:hover {
+    width: 50%;
+    animation: none;
+  }
+
+  #section3 .blur {
+    height: auto;
   }
 }
 

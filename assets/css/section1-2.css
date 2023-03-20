@@ -121,6 +121,12 @@
   }
 }
 
+@media (max-width: 762px) {
+  .content-box {
+    padding: 0px;
+  }
+}
+
 @media (max-width: 400px) {
   .content-box h2 {
     font-size: 26px;

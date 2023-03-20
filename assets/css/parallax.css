@@ -63,6 +63,10 @@
     background-color: var(--alternative-bg);
   }
 
+  .parallax1 .blur {
+    padding: 0px;
+  }
+
   .parallax2 {
     background-color: var(--secondary-bg);
   }
