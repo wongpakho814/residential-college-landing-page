@@ -28,10 +28,6 @@ footer ul {
   margin-bottom: 0;
 }
 
-footer h4 {
-  color: var(--text);
-}
-
 .footer-container {
   display: flex;
   justify-content: center;
@@ -44,6 +40,10 @@ footer .item {
 footer .item a {
   color: var(--text);
   text-decoration: none;
+}
+
+footer .item .big-text {
+  font-size: 24px;
 }
 
 footer .item a:hover {
