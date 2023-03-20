@@ -56,13 +56,14 @@
   margin-bottom: 20px;
   padding: 50px;
   min-height: 350px;
-  background-color: var(--light-blue);
+  background-color: var(--alternative-bg);
   border-radius: 20px;
 }
 
 .content-box img {
   width: 40%;
   object-fit: cover;
+  border-radius: 10px;
 }
 
 .content-box h2 {

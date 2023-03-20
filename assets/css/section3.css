@@ -26,8 +26,11 @@
 
 #section3 h2 {
   color: var(--primary-bg);
+  background-color: var(--text);
   margin-top: auto;
   margin-bottom: auto;
+  padding: 10px;
+  border-radius: 10px;
 }
 
 #section3 section {
